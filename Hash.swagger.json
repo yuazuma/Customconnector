@@ -1,0 +1,57 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Hash",
+    "description": "Hash",
+    "version": "1.0"
+  },
+  "host": "example.com",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/Hash": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "Value": {
+                  "type": "string",
+                  "description": "Value"
+                },
+                "Hashed": {
+                  "type": "string",
+                  "description": "Hashed"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Hash",
+        "description": "Hash",
+        "operationId": "Hash",
+        "x-ms-visibility": "important",
+        "parameters": [
+          {
+            "name": "value",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {},
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {},
+  "security": [],
+  "tags": []
+}
